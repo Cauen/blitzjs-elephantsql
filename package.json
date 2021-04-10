@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "build": "blitz prisma migrate deploy && blitz build",
+    "dev": "blitz dev",
+    "start": "blitz start",
     "cy:open": "cypress open",
     "cy:run": "cypress run || cypress run",
     "test:server": "prisma generate && blitz prisma migrate deploy && blitz db seed && blitz build && blitz start -p 3099",
