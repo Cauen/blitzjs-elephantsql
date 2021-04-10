@@ -11,11 +11,11 @@ export const getStaticProps = async (ctx: GetStaticPropsContext) => {
   }
 }
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = (await getProducts({orderBy: {id: "desc"}})).products.map(({handle}) => ({
-    params: {handle},
-  }))
+  // const paths = (await getProducts({orderBy: {id: "desc"}})).products.map(({handle}) => ({
+  //   params: {handle},
+  // }))
   return {
-    paths,
+    paths: [],
     fallback: true,
   }
 }
